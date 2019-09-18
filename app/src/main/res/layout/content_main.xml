@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <android.support.design.card.MaterialCardView
+        android:layout_marginTop="50dp"
+        android:id="@+id/profileButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/orange"
+        app:cardCornerRadius="20dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="343dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aboutButton">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:text="@string/my_profile"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+        android:layout_marginTop="50dp"
+        android:id="@+id/aboutButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/orange"
+        app:cardCornerRadius="20dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="343dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:text="@string/about"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </android.support.design.card.MaterialCardView>
+</android.support.constraint.ConstraintLayout>
